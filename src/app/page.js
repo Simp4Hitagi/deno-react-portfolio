@@ -1,14 +1,19 @@
 import HeroSection from "./components/Hero";
 import HeaderSection from "./components/Header";
 import ComicLayout from "./components/ComicLayout";
+import SinglePageSections from "./components/SinglePageSections";
 
 export default function Home() {
   return (
-    <main className="p-24 mx-28">
-  {/* <HeaderSection /> */}
-  {/* <HeroSection /> */}
-
-      <ComicLayout />
-    </main>
+    <div>
+      <header className="sticky top-0 z-50"> 
+        <HeaderSection />
+      </header>
+      <main className="relative">
+        {/* <HeroSection /> */}
+        {/* <ComicLayout /> */}
+        <SinglePageSections/>
+      </main>
+    </div>
   );
 }
