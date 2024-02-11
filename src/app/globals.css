@@ -58,8 +58,8 @@ body {
 }
 
 .hero-item {
-  background-image: url("https://i.postimg.cc/hGfm6C8Z/Screenshot-2023-12-17-020640.jpg");
-  background-position-y: -80px;
+  background-image: url("https://i.postimg.cc/3JT5JNRY/Berserk-v05-ep06-p166-167.jpg");
+  background-position-y: -300px;
 }
 
 .standard-item:nth-child(2) {
@@ -70,10 +70,10 @@ body {
   background-image: url("https://i.postimg.cc/RhRqNfQn/Berserk-v26c217p000.jpg");
 }
 
-.standard-item:nth-child(4) {
+/* .standard-item:nth-child(4) {
   background-image: url("https://i.postimg.cc/xTz4DR5C/Berserk-23-183-184.png");
   background-position-y: 0px;
-}
+} */
 
 @supports (display: grid) {
   .comic-item {
@@ -113,4 +113,135 @@ clip-path: polygon(100% 6%, 85% 52%, 94% 52%, 90% 81%, 0 87%, 0 13%);
     clip-path: polygon(45% 0, 100% 15%, 100% 100%, 0 100%, 0 5%);
     margin-top: -107px;
   }
+}
+
+/* Project Layout */
+
+.comic {
+  display:flex;
+  flex-wrap:wrap;
+  /* padding:1vmin; */
+}
+
+.panel {
+  background-color:#fff;
+  border:solid 2px #000;
+  box-shadow:0 6px 6px -6px #000;
+  display:inline-block;
+  flex:1 1;
+  height:300px;
+  margin:1vmin;
+  overflow:hidden;
+  position:relative;
+}
+
+.text {
+  background-color:#fff;
+  border:solid 2px #000;
+  margin:0;
+  padding:3px 10px;
+}
+
+.top-left {
+  left:-6px;
+  position:absolute;
+  top:-2px;
+  transform:skew(-15deg);
+}
+
+.bottom-right {
+  bottom:-2px;
+  position:absolute;
+  right:-6px;
+  transform:skew(-15deg);
+}
+.panel:nth-child(1) {
+  flex-basis: 400px;
+}
+.panel:nth-child(2) {
+  flex-basis: 200px;
+}
+.panel:nth-child(3) {
+  flex-basis: 200px;
+}
+.panel:nth-child(4) {
+  flex-basis: 200px;
+}
+.panel:nth-child(5) {
+  flex-basis: 200px;
+}
+.panel:nth-child(6) {
+  flex-basis: 200px;
+}
+.panel:nth-child(7) {
+  flex-basis: 400px;
+}
+.panel:nth-child(8) {
+  flex-basis: 200px;
+}
+.panel:nth-child(9) {
+  flex-basis: 200px;
+}
+
+/* background colours */
+
+.panel:nth-child(4n+1) {
+  background-image: url("https://i.postimg.cc/cCKqgt3L/Berserk-v14-p052.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.panel:nth-child(4n+2) {
+  background-image: url("https://i.postimg.cc/rpjF5HhZ/Berserk01-026.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.panel:nth-child(4n+3) {
+  background-image: url("https://i.postimg.cc/JhgSw4vw/Berserk-v10-ep07-p154-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.panel:nth-child(4n+4) {
+  background-image: url("https://i.postimg.cc/QCZPtYj0/Berserk-v26c218p043.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+}
+.panel:nth-child(4n+5) {
+  background-image: url("https://i.postimg.cc/W1YHr12D/Screenshot-2023-12-18-051028.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.panel:nth-child(4n+6) {
+  background-image: url("https://i.postimg.cc/dV3Wqc8J/Berserk-v26c217p001-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.panel:nth-child(4n+7) {
+  background-image: url("https://i.postimg.cc/yYZd2kGK/Berserk-v14-p071.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.panel:nth-child(4n+8) {
+  background-image: url("https://i.postimg.cc/8CHBWydZ/Berserk-v27c236p212-213.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+/* skew about */
+.skew {
+  -webkit-backface-visibility : hidden;
+  -webkit-transform           : skew(16deg, 0);
+  position                    : relative;
+}
+
+.skew-content {
+  -webkit-transform : skew(-16deg, 0);
+  position          : relative;
 }

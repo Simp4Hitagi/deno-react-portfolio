@@ -1,21 +1,26 @@
 import ComicLayout from "./ComicLayout";
+import Projectslayout from "./ProjectsLayout"
+import SkillsLayout from "./SkillsLayout";
+import AboutLayout from "./AboutLayout";
 
 const SinglePageSetions = () => {
     return (
         <div className="container relative grid grid-rows-4">
-            <div className="sticky top-0 h-screen w-screen flex flex-col items-center justify-center bg-black">
+            {/* Home */}
+            <div className="sticky top-0 h-fit w-screen flex flex-col items-center justify-center bg-black">
                 <ComicLayout />
             </div>
-            <div className="sticky top-0 h-screen w-screen flex flex-col items-center justify-center bg-white text-black">
-                <h2 className="text-4xl">The Second Title</h2>
-                <p>Scroll Down</p>
+            {/* Projects */}
+            <div className="sticky top-0 h-screen w-screen items-center justify-center bg-white text-black">
+                <Projectslayout />
             </div>
-            <div className="sticky top-0 h-screen w-screen flex flex-col items-center justify-center bg-black text-white">
-                <h2 className="text-4xl">The Third Title</h2>
-                <p>Scroll Down</p>
+            {/* Skills */}
+            <div className="sticky top-0 h-fit w-screen flex flex-col items-center justify-center bg-black text-white">
+             <SkillsLayout />
             </div>
+            {/* About */}
             <div className="sticky top-0 h-screen w-screen flex flex-col items-center justify-center bg-white text-black">
-                <h2 className="text-4xl">The Fourth Title</h2>
+            <AboutLayout />
             </div>
         </div>        
     )
