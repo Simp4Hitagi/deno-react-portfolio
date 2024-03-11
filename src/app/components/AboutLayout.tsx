@@ -1,19 +1,40 @@
+import Image from "next/image";
+import skills2 from "../assets/skills2.png"
+import skills1 from "../assets/skills1.png"
+
 const AboutLayout = () => {
     return (
-        <div className="container grid grid-cols-2 h-screen">
-            <div className=" bg-gray-700 skew">
-                <p className="skew-content"> 
-                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio dolorum cupiditate ducimus veritatis voluptas perferendis, laudantium odio, iste rerum atque quidem maiores eligendi corporis et minus at laborum! Neque, ipsa!
-                 Eligendi recusandae, ipsam aperiam exercitationem rem quibusdam earum illo fuga doloribus culpa quidem molestias dolores ratione, quaerat pariatur, debitis ab unde omnis sit nulla. Debitis, ut? Voluptas quam dicta consequuntur.
-                 Repellendus qui reiciendis odio pariatur. Dicta minima optio qui ad quas deserunt dolore ipsa! Quidem, veritatis amet. Reiciendis fugiat sapiente, deserunt sit mollitia facere impedit. Nobis quis magni deleniti vel!
-                 Expedita et modi perspiciatis fuga? Incidunt commodi adipisci blanditiis numquam laboriosam, ut asperiores deleniti, aut vitae autem ducimus amet sequi odit facilis iste? Velit eum culpa sint earum minus doloribus.
-                 Cum rem natus doloremque facilis quas commodi numquam atque ullam eveniet a provident ex animi eos cumque fugiat, quasi minus impedit autem, cupiditate fuga est. Sit quos sed at recusandae?   
-                </p>
+        <section className="container grid grid-cols-2 h-screen">
+            <div className="bg-black">
+                <h2 className="text-center my-96 text-white text-4xl font-extrabold">Perhaps it belonged to domain of legend</h2>
             </div>
-            <div className="deno bg-red-800">
-
+            <div className="images m-10">
+            <div className="grid grid-cols-2">
+                    <Image
+                        className="w-full rounded-lg ml-4 mb-24 z-50"
+                        src={skills2}
+                        alt="image overlay"
+                    />
+                    <Image 
+                        className="mt-4 w-full lg:mt-10 rounded-lg"
+                        src={skills1}
+                        alt="first image"
+                        />                    
             </div>
-        </div>
+            <div className="grid grid-cols-2">
+                    <Image
+                        className="w-full rounded-lg ml-4 mb-24 z-50"
+                        src={skills2}
+                        alt="image overlay"
+                    />
+                    <Image 
+                        className="mt-4 w-full lg:mt-10 rounded-lg"
+                        src={skills1}
+                        alt="first image"
+                        />                    
+            </div>
+            </div>
+        </section>
     )
 }
 

@@ -14,5 +14,15 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.duration-2000': {
+          'transition-duration': '2s',
+        },
+      };
+      
+      addUtilities(newUtilities, ['hover']);
+    },
+  ],
 };
