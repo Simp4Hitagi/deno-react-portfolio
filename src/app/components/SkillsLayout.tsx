@@ -1,52 +1,140 @@
 'use client'
-import React from "react";
-// import ReactPlayer from "react-player";
+// import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import thorfinn from "../assets/thorfinn-removebg-preview.png"
+// import thorfinn from "../assets/thorfinn-removebg-preview.png"
 import nextjs from "../assets/nextjs.png"
-import python from "../assets/python.png"
 import nodejs from "../assets/nodejs.png"
 import typescript from "../assets/typescript.png"
 import reactjs from "../assets/reactjs.png"
 import tailwindcss from "../assets/tailwindcss.png"
+import python from "../assets/python.png"
+import vuejs from "../assets/vuejs.png"
+import mysql from "../assets/mysql.png"
+import wordpress from "../assets/wordpress.png"
+import github from "../assets/github.png"
 
 const SkillsLayout = () => {
+    const [hovered, setHovered] = useState(false);
+
     return (
-        <div className="container relative grid lg:grid-cols-2">
-            <Image
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+        <div className="container relative grid lg:grid-cols-5 md:grid-cols-1">
+            {/* 1st Set of images */}
+        <div
+          className="group relative"
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+        >
+          <Image
+            className={`transition ease-in-out duration-1000 ${
+              hovered ? "opacity-0" : "opacity-100"
+            }`}
             src={reactjs}
-            alt="image overlay"
-            />
-            <Image 
-            className="mx-auto"
-            src={tailwindcss}
-            alt="first image"
+            alt="1st image"
+          />
+          <Image
+            className={`mx-auto absolute top-0 left-0 transition ease-in-out duration-1000 ${
+              hovered ? "opacity-100" : "opacity-0"
+            }`}
+            src={wordpress}
+            alt="2nd image"
             width={400}
             height={400}
-            />
-            <Image
-            className="mx-auto"
-            src={nextjs}
-            alt="second image"
-            width={400}
-            height={400}
-            />
-            <Image
-            className="mx-auto" 
-            src={nodejs}
-            alt="third image"
-            width={400}
-            height={400}
-            />
-            <Image
-            className="mx-auto" 
-            src={typescript}
-            alt="fourth image"
-            width={400}
-            height={400}
-            />
+          />
         </div>
+             {/* 2nd Set of images */}
+        <div
+          className="group relative"
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+        >
+          <Image
+            className={`transition ease-in-out duration-1000 ${
+              hovered ? "opacity-0" : "opacity-100"
+            }`}
+            src={nextjs}
+            alt="3rd image"
+          />
+          <Image
+            className={`mx-auto absolute top-0 left-0 transition ease-in-out duration-1000 ${
+              hovered ? "opacity-100" : "opacity-0"
+            }`}
+            src={nodejs}
+            alt="4th image"
+            width={400}
+            height={400}
+          />
+        </div>
+            {/* 3rd Set of images */}
+        <div
+          className="group relative"
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+        >
+          <Image
+            className={`transition ease-in-out duration-1000 ${
+              hovered ? "opacity-0" : "opacity-100"
+            }`}
+            src={typescript}
+            alt="5th image"
+          />
+          <Image
+            className={`mx-auto absolute top-0 left-0 transition ease-in-out duration-1000 ${
+              hovered ? "opacity-100" : "opacity-0"
+            }`}
+            src={vuejs}
+            alt="6th image"
+            width={400}
+            height={400}
+          />
+        </div>
+            {/* 4th Set of images */}
+        <div
+          className="group relative"
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+        >
+          <Image
+            className={`transition ease-in-out duration-1000 ${
+              hovered ? "opacity-0" : "opacity-100"
+            }`}
+            src={tailwindcss}
+            alt="7th image"
+          />
+          <Image
+            className={`mx-auto absolute top-0 left-0 transition ease-in-out duration-1000 ${
+              hovered ? "opacity-100" : "opacity-0"
+            }`}
+            src={python}
+            alt="8th image"
+            width={400}
+            height={400}
+          />
+        </div>
+            {/* 5th Set of images */}
+        <div
+          className="group relative"
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+        >
+          <Image
+            className={`transition ease-in-out duration-1000 ${
+              hovered ? "opacity-0" : "opacity-100"
+            }`}
+            src={mysql}
+            alt="9th image"
+          />
+          <Image
+            className={`mx-auto absolute top-0 left-0 transition ease-in-out duration-1000 ${
+              hovered ? "opacity-100" : "opacity-0"
+            }`}
+            src={github}
+            alt="10th image"
+            width={400}
+            height={400}
+          />
+        </div>
+    </div>
     );
 }
 

@@ -11,11 +11,11 @@ const SinglePageSetions = () => {
                 <HomeLayout />
             </div>
             {/* Projects */}
-            <div className="sticky top-0 h-screen w-screen items-center justify-center bg-white text-black">
+            <div className="sticky top-0 h-full w-screen items-center justify-center bg-black text-white">
                 <Projectslayout />
             </div>
             {/* Skills */}
-            <div className="sticky top-0 h-fit w-screen flex flex-col items-center justify-center bg-black text-white">
+            <div className="sticky top-0 h-full w-screen flex flex-col items-center justify-center bg-black text-white">
              <SkillsLayout />
             </div>
             {/* About */}
