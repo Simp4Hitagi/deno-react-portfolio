@@ -32,9 +32,8 @@ body {
   }
 }
 
-
-/* Comic */
-
+/* Home Page Comic */
+/* ====================================================================================== */
 .wrapper {
   display: grid;
   grid-gap: 10px;
@@ -57,11 +56,11 @@ body {
   width: 50%;
 }
 
-/* home page */
+
 .overlay-text {
   position: absolute;
   top: 50%;
-  left: 65%;
+  left: 73%;
   transform: translate(-50%, -50%);
   color: white;
   font-size: 70px;
@@ -117,6 +116,7 @@ body {
   }
 }
 
+/* ============================================================================================== */
 /* Project Layout */
 
 .comic {
@@ -188,54 +188,54 @@ body {
 /* background colours */
 
 .panel:nth-child(4n+1) {
-  background-image: url("./assets/artproject16.jpg");
+  background-image: url("./assets/Projects/capstoneEcommerce.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .panel:nth-child(4n+2) {
-  background-image: url("./assets/artproject17.jpg");
+  background-image: url("./assets/Projects/calculator.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .panel:nth-child(4n+3) {
-  background-image: url("./assets/artproject19.webp");
+  background-image: url("./assets/Projects/vuePortfolio.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .panel:nth-child(4n+4) {
-  background-image: url("./assets/artproject6.jpg");
-  background-position: right;
+  background-image: url("./assets/Projects/pythonProjects.png");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-
 }
 .panel:nth-child(4n+5) {
-  background-image: url("./assets/artproject9.jpg");
+  background-image: url("./assets/Projects/wordPressPortfolio.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
 }
 
 .panel:nth-child(4n+6) {
-  background-image: url("./assets/artproject18.webp");
+  background-image: url("./assets/Projects/tripTronik.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .panel:nth-child(4n+7) {
-  background-image: url("./assets/artproject1.jpg");
+  background-image: url("./assets/Projects/restApi.jpg");
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
 }
 
 .panel:nth-child(4n+8) {
-  background-image: url("./assets/artproject22.jpg");
+  background-image: url("./assets/Projects/binaryNewsApi.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -253,6 +253,15 @@ body {
   position          : relative;
 }
 
+
+/* Contact */
+/* ================================================================================================================ */
+#contact {
+  background-image: url("./assets/contact.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 
 /* =================================================================================================== */
@@ -337,4 +346,5 @@ body {
   
 
 }
+
 
