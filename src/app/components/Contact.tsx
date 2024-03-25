@@ -11,7 +11,7 @@ const ContactLayout = () => {
                   <div className="mb-12 md:mt-12 lg:mt-0 lg:mb-0">
                     <div
                       className="relative z-[1] block rounded-lg bg-[hsla(0,0%,100%,0.55)] px-6 py-24 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] backdrop-blur-[30px] dark:bg-[hsla(0,0%,5%,0.7)] dark:shadow-black/20 md:px-12 lg:-mr-14 lg:top-16">
-                      <h2 className="mb-12 text-3xl font-bold text-white">Let's have a chat</h2>
+                      <h2 className="mb-12 text-3xl font-bold text-white">Let&apos;s have a chat</h2>
                       <form>
                         <div className="relative mb-6" data-te-input-wrapper-init>
                           <input
