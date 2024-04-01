@@ -5,6 +5,7 @@ import AboutLayout from "./AboutLayout";
 import TimelineLayout from "./TimeLine"
 import ContactLayout from "./Contact"
 import TestimonialsLayout from "./Testimonials"
+import React from "react";
 
 const SinglePageSetions = () => {
     return (
@@ -21,8 +22,8 @@ const SinglePageSetions = () => {
             {/* Skills  */}
             {/* Include resume with timeline */}
             <div id="skills" className="sticky top-0 h-full w-screen flex flex-col items-center justify-center bg-black text-white">
-             <SkillsLayout />
              <TimelineLayout />
+             <SkillsLayout />
             </div>
             {/* About */}
             <div id="about" className="sticky top-0 h-screen w-screen flex flex-col items-center justify-center bg-white text-black">

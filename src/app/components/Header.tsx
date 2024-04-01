@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../assets/logo.png"
+import React from "react";
 
 const HeaderSection = () => {
     return (
-        <nav className="border-b-8 border-black dark:bg-black sticky top-0 z-50 h-20 flex flex-wrap items-center justify-between mx-auto ">
+        <nav className="border-b-8 border-black dark:bg-black sticky top-0 z-50 h-15 flex flex-wrap items-center justify-between mx-auto ">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto lg:p-8">
             <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
                 <span className="sr-only">Open main menu</span>

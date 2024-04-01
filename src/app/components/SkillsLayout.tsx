@@ -18,7 +18,7 @@ const SkillsLayout = () => {
     const [hovered, setHovered] = useState(false);
 
     return (
-        <div className="container relative grid lg:grid-cols-5 md:grid-cols-1">
+        <div className="container relative grid lg:grid-cols-5 md:grid-cols-1 w-3/4 pb-60">
             {/* 1st Set of images */}
         <div
           className="group relative"

@@ -1,5 +1,6 @@
 
 "use client";
+import React from "react";
 import { Button, Timeline } from "flowbite-react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 
